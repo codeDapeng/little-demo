@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象test</title>
+    <script>
+        function Car(c,d){
+            this.color=c;
+            this.door=d;
+        }
+        Car.prototype.showColor=function(){
+//            return this.color
+            alert(this.color)
+        }
+        var car=new Car("blue","4")
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOChttps://github.com/codeDapeng/little-demo.gitTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 5;
+        var b = 10;
+
+        function tag(s, v1, v2) {
+            document.write(s[0]);
+            document.write(s[1]);
+            document.write(v1);
+            document.write(v2);
+            return "OK";
+        }
+
+        tag `Hello ${ a + b } world ${ a * b}`;
+        // "Hello "
+        // " world "
+        // 15
+        // 50
+        // "OK"
+    </script>
+</body>
+
+</html>

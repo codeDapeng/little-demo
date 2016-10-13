@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>进度</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 500px;
+            height: 50px;
+            border: 1px dashed #333;
+            margin: 25px auto;
+        }
+
+        #ctn {
+            height: 50px;
+            width: 1px;
+            background: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="ctn"></div>
+    </div>
+    <script>
+        window.onload = function () {
+            var ctn = document.getElementById('ctn');
+            var wid = ctn.offsetWidth;
+            setInterval(function () {
+                if (wid < 500) {
+                    wid += 2;
+                    ctn.style.width = wid + 'px';
+                    console.log(wid)
+                }
+            }, 100)
+        }
+    </script>
+</body>
+
+</html>
